@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UNSALABLE — Dr. Theologos Theologou</title>
+
+<meta name="description" content="UNSALABLE — The official art portfolio of Dr. Theologos Theologou. I operate by day. I paint by night.">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f7f4;
+  color: #181818;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  padding: 32px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  background: #f8f7f4;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #181818;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.45;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(65px, 12vw, 165px);
+  font-weight: 300;
+  letter-spacing: 5px;
+  line-height: 1;
+}
+
+.hero p {
+  margin-top: 30px;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.hero-line {
+  width: 1px;
+  height: 75px;
+  background: #777;
+  margin-top: 65px;
+}
+
+/* GALLERY */
+
+.gallery {
+  width: 88%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.artwork {
+  margin-bottom: 140px;
+  text-align: center;
+}
+
+.artwork-image {
+  display: block;
+  width: 100%;
+  max-height: 850px;
+  object-fit: contain;
+  cursor: zoom-in;
+  transition: transform 0.6s ease;
+}
+
+.artwork-image:hover {
+  transform: scale(1.015);
+}
+
+.artwork h2 {
+  margin-top: 30px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 300;
+}
+
+.artwork p {
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #777;
+}
+
+/* ABOUT */
+
+.about {
+  background: #eeede8;
+  padding: 140px 12%;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.about p {
+  max-width: 650px;
+  margin: 30px auto 0;
+  font-size: 14px;
+  line-height: 2.2;
+  color: #444;
+}
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+  padding: 110px 20px;
+}
+
+.contact h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 55px;
+  font-weight: 300;
+}
+
+.contact p {
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 2;
+  color: #666;
+}
+
+/* FULLSCREEN IMAGE VIEWER */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.96);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 20px 20px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* SCROLL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  header {
+    flex-direction: column;
+    padding: 25px 15px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .hero {
+    min-height: 55vh;
+    padding: 75px 15px;
+  }
+
+  .hero h1 {
+    font-size: clamp(45px, 11vw, 75px);
+    letter-spacing: 1px;
+  }
+
+  .hero p {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .gallery {
+    width: 94%;
+  }
+
+  .artwork {
+    margin-bottom: 85px;
+  }
+
+  .artwork h2 {
+    font-size: 31px;
+  }
+
+  .about {
+    padding: 90px 8%;
+  }
+
+  .about h2 {
+    font-size: 45px;
+  }
+
+  .contact {
+    padding: 90px 20px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .artwork-image {
+    transition: none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="logo">DR. THEOLOGOU</div>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#artworks">ARTWORKS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <h1>UNSALABLE</h1>
+
+  <p>I operate by day. I paint by night.</p>
+
+  <div class="hero-line"></div>
+
+</section>
+
+
+<!-- ARTWORK GALLERY -->
+
+<main class="gallery" id="artworks">
+
+  <!-- ARTWORK 1 -->
+
+  <article class="artwork reveal">
+
+    <img
+      class="artwork-image"
+      src="artworks/artwork1.jpg"
+      alt="Artwork I"
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
+
+    <h2>Artwork I</h2>
+
+    <p>UNSALABLE COLLECTION</p>
+
+  </article>
+
+
+  <!-- ARTWORK 2 -->
+
+  <article class="artwork reveal">
+
+    <img
+      class="artwork-image"
+      src="artworks/artwork2.jpg"
+      alt="Artwork II"
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
+
+    <h2>Artwork II</h2>
+
+    <p>UNSALABLE COLLECTION</p>
+
+  </article>
+
+
+  <!-- ARTWORK 3 -->
+
+  <article class="artwork reveal">
+
+    <img
+      class="artwork-image"
+      src="artworks/artwork3.jpg"
+      alt="Artwork III"
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
+
+    <h2>Artwork III</h2>
+
+    <p>UNSALABLE COLLECTION</p>
+
+  </article>
+
+
+  <!-- ARTWORK 4 -->
+
+  <article class="artwork reveal">
+
+    <img
+      class="artwork-image"
+      src="artworks/artwork4.jpg"
+      alt="Artwork IV"
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
+
+    <h2>Artwork IV</h2>
+
+    <p>UNSALABLE COLLECTION</p>
+
+  </article>
+
+
+  <!-- ARTWORK 5 -->
+
+  <article class="artwork reveal">
+
+    <img
+      class="artwork-image"
+      src="artworks/artwork5.jpg"
+      alt="Artwork V"
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
+
+    <h2>Artwork V</h2>
+
+    <p>UNSALABLE COLLECTION</p>
+
+  </article>
+
+
+  <!-- ARTWORK 6 -->
+
+  <article class="artwork reveal">
+
+    <img
+      class="artwork-image"
+      src="artworks/artwork6.jpg"
+      alt="Artwork VI"
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
+
+    <h2>Artwork VI</h2>
+
+    <p>UNSALABLE COLLECTION</p>
+
+  </article>
+
+
+  <!-- ARTWORK 7 -->
+
+  <article class="artwork reveal">
+
+    <img
+      class="artwork-image"
+      src="artworks/artwork7.jpg"
+      alt="Artwork VII"
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
+
+    <h2>Artwork VII</h2>
+
+    <p>UNSALABLE COLLECTION</p>
+
+  </article>
+
+</main>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <h2>The Artist</h2>
+
+  <p>
+    Dr. Theologos Theologou is a neurosurgeon and artist.
+    His artistic practice explores emotion, identity,
+    spirituality and the human experience.
+  </p>
+
+  <p>
+    Through the UNSALABLE collection, art becomes
+    a deeply personal expression beyond commercial value.
+  </p>
+
+  <p>
+    I operate by day. I paint by night.
+  </p>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <h2>Contact</h2>
+
+  <p>For artistic inquiries and collaborations</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>DR. THEOLOGOS THEOLOGOU</p>
+
+  <p>UNSALABLE COLLECTION</p>
+
+  <p>© <span id="year"></span> ALL RIGHTS RESERVED</p>
+
+</footer>
+
+
+<!-- IMAGE VIEWER -->
+
+<div
+  class="lightbox"
+  id="lightbox"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Artwork image viewer"
+  onclick="closeLightbox()"
+>
+
+  <button
+    class="close-lightbox"
+    type="button"
+    aria-label="Close image viewer"
+    onclick="closeLightbox()"
+  >
+    &times;
+  </button>
+
+  <img id="lightbox-img" alt="Enlarged artwork">
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-img");
+
+function openLightbox(img) {
+  if (!img.complete || img.naturalWidth === 0) return;
+
+  lightboxImage.src = img.src;
+  lightboxImage.alt = img.alt;
+  lightbox.classList.add("active");
+
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("active");
+  lightboxImage.removeAttribute("src");
+
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+});
+
+const observer = new IntersectionObserver(
+  function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.08
+  }
+);
+
+document.querySelectorAll(".reveal").forEach(function(element) {
+  observer.observe(element);
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
