@@ -135,11 +135,31 @@ nav a:hover {
   font-weight: 300;
 }
 
-.artwork p {
-  margin-top: 10px;
-  font-size: 10px;
-  letter-spacing: 3px;
+/* ARTWORK DETAILS */
+
+.artwork-details {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.artwork-details .style {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.artwork-details .medium,
+.artwork-details .dimensions,
+.artwork-details .year {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
   color: #777;
+  line-height: 2.2;
+  margin-top: 2px;
 }
 
 /* ABOUT */
@@ -290,6 +310,16 @@ footer p {
     font-size: 31px;
   }
 
+  .artwork-details .style {
+    font-size: 20px;
+  }
+
+  .artwork-details .medium,
+  .artwork-details .dimensions,
+  .artwork-details .year {
+    font-size: 10px;
+  }
+
   .about {
     padding: 90px 8%;
   }
@@ -305,6 +335,7 @@ footer p {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   html {
     scroll-behavior: auto;
   }
@@ -318,6 +349,7 @@ footer p {
   .artwork-image {
     transition: none;
   }
+
 }
 
 </style>
@@ -358,135 +390,170 @@ footer p {
 
 <main class="gallery" id="artworks">
 
-  <!-- ARTWORK 1 -->
+  <!-- 01 MEDUSA -->
 
   <article class="artwork reveal">
 
     <img
       class="artwork-image"
       src="images/medusa.jpg"
-      alt="Artwork I — UNSALABLE Collection"
+      alt="Medusa — Dr. Theologos Theologou"
       loading="lazy"
       onclick="openLightbox(this)"
     >
 
-    <h2>Artwork I</h2>
+    <h2>MEDUSA</h2>
 
-    <p>UNSALABLE COLLECTION</p>
+    <div class="artwork-details">
+      <p class="style">Hyperrealism</p>
+      <p class="medium">Medium: Colored Pencils on Canvas</p>
+      <p class="dimensions">Dimensions: 60 × 90 cm</p>
+      <p class="year">Year: 2026</p>
+    </div>
 
   </article>
 
 
-  <!-- ARTWORK 2 -->
+  <!-- 02 SAVIOR -->
 
   <article class="artwork reveal">
 
     <img
       class="artwork-image"
       src="images/IMG_9437.JPG"
-      alt="Artwork II — UNSALABLE Collection"
+      alt="Savior — Dr. Theologos Theologou"
       loading="lazy"
       onclick="openLightbox(this)"
     >
 
-    <h2>Artwork II</h2>
+    <h2>Savior</h2>
 
-    <p>UNSALABLE COLLECTION</p>
+    <div class="artwork-details">
+      <p class="style">Hyperrealism</p>
+      <p class="medium">Medium: Colored Pencils on Canvas</p>
+      <p class="dimensions">Dimensions: 60 × 90 cm</p>
+      <p class="year">Year: 2026</p>
+    </div>
 
   </article>
 
 
-  <!-- ARTWORK 3 -->
+  <!-- 03 THE WEEPING VIRGIN MARY -->
 
   <article class="artwork reveal">
 
     <img
       class="artwork-image"
       src="images/IMG_9444%202.jpg"
-      alt="Artwork III — UNSALABLE Collection"
+      alt="The Weeping Virgin Mary — Dr. Theologos Theologou"
       loading="lazy"
       onclick="openLightbox(this)"
     >
 
-    <h2>Artwork III</h2>
+    <h2>The Weeping Virgin Mary</h2>
 
-    <p>UNSALABLE COLLECTION</p>
+    <div class="artwork-details">
+      <p class="style">Hyperrealism</p>
+      <p class="medium">Medium: Colored Pencils on Canvas</p>
+      <p class="dimensions">Dimensions: 60 × 90 cm</p>
+      <p class="year">Year: 2026</p>
+    </div>
 
   </article>
 
 
-  <!-- ARTWORK 4 -->
+  <!-- 04 ARTEMIS -->
 
   <article class="artwork reveal">
 
     <img
       class="artwork-image"
       src="images/IMG_9453.JPG"
-      alt="Artwork IV — UNSALABLE Collection"
+      alt="Artemis — Dr. Theologos Theologou"
       loading="lazy"
       onclick="openLightbox(this)"
     >
 
-    <h2>Artwork IV</h2>
+    <h2>Artemis</h2>
 
-    <p>UNSALABLE COLLECTION</p>
+    <div class="artwork-details">
+      <p class="style">Hyperrealism</p>
+      <p class="medium">Medium: Colored Pencils on Canvas</p>
+      <p class="dimensions">Dimensions: 60 × 90 cm</p>
+      <p class="year">Year: 2026</p>
+    </div>
 
   </article>
 
 
-  <!-- ARTWORK 5 -->
+  <!-- 05 LUCIFER FALLING -->
 
   <article class="artwork reveal">
 
     <img
       class="artwork-image"
       src="images/IMG_9454%202.jpg"
-      alt="Artwork V — UNSALABLE Collection"
+      alt="Lucifer Falling — Dr. Theologos Theologou"
       loading="lazy"
       onclick="openLightbox(this)"
     >
 
-    <h2>Artwork V</h2>
+    <h2>Lucifer Falling</h2>
 
-    <p>UNSALABLE COLLECTION</p>
+    <div class="artwork-details">
+      <p class="style">Hyperrealism</p>
+      <p class="medium">Medium: Colored Pencils on Canvas</p>
+      <p class="dimensions">Dimensions: 60 × 90 cm</p>
+      <p class="year">Year: 2026</p>
+    </div>
 
   </article>
 
 
-  <!-- ARTWORK 6 -->
+  <!-- 06 THE VIRGIN MARY WITH THE LILY -->
 
   <article class="artwork reveal">
 
     <img
       class="artwork-image"
       src="images/IMG_9460.JPG"
-      alt="Artwork VI — UNSALABLE Collection"
+      alt="The Virgin Mary with the Lily — Dr. Theologos Theologou"
       loading="lazy"
       onclick="openLightbox(this)"
     >
 
-    <h2>Artwork VI</h2>
+    <h2>The Virgin Mary with the Lily</h2>
 
-    <p>UNSALABLE COLLECTION</p>
+    <div class="artwork-details">
+      <p class="style">Hyperrealism</p>
+      <p class="medium">Medium: Colored Pencils on Canvas</p>
+      <p class="dimensions">Dimensions: 60 × 90 cm</p>
+      <p class="year">Year: 2026</p>
+    </div>
 
   </article>
 
 
-  <!-- ARTWORK 7 -->
+  <!-- 07 THE LITTLE MATCH GIRL -->
 
   <article class="artwork reveal">
 
     <img
       class="artwork-image"
       src="images/IMG_9491.JPG"
-      alt="Artwork VII — UNSALABLE Collection"
+      alt="The Little Match Girl — Dr. Theologos Theologou"
       loading="lazy"
       onclick="openLightbox(this)"
     >
 
-    <h2>Artwork VII</h2>
+    <h2>The Little Match Girl</h2>
 
-    <p>UNSALABLE COLLECTION</p>
+    <div class="artwork-details">
+      <p class="style">Hyperrealism</p>
+      <p class="medium">Medium: Colored Pencils on Canvas</p>
+      <p class="dimensions">Dimensions: 60 × 90 cm</p>
+      <p class="year">Year: 2026</p>
+    </div>
 
   </article>
 
@@ -574,44 +641,64 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightbox-img");
 
 function openLightbox(img) {
+
   if (!img.complete || img.naturalWidth === 0) return;
 
   lightboxImage.src = img.src;
   lightboxImage.alt = img.alt;
+
   lightbox.classList.add("active");
 
   document.body.style.overflow = "hidden";
+
 }
 
 function closeLightbox() {
+
   lightbox.classList.remove("active");
+
   lightboxImage.removeAttribute("src");
 
   document.body.style.overflow = "";
+
 }
 
 document.addEventListener("keydown", function(event) {
+
   if (event.key === "Escape") {
     closeLightbox();
   }
+
 });
 
 const observer = new IntersectionObserver(
+
   function(entries) {
+
     entries.forEach(function(entry) {
+
       if (entry.isIntersecting) {
+
         entry.target.classList.add("visible");
+
         observer.unobserve(entry.target);
+
       }
+
     });
+
   },
+
   {
     threshold: 0.08
   }
+
 );
 
 document.querySelectorAll(".reveal").forEach(function(element) {
+
   observer.observe(element);
+
 });
 
 document.getElementById("year").textContent =
