@@ -1,710 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>UNSALABLE — Dr. Theologos Theologou</title>
 
-<meta name="description" content="UNSALABLE — The official art portfolio of Dr. Theologos Theologou. I operate by day. I paint by night.">
+<meta name="description" content="UNSALABLE — The official art portfolio of Dr. Theologos Theologou. Painting with a Scalpel. I operate by day. I paint by night.">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
+/* GENERAL */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background: #f8f7f4;
-  color: #181818;
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  overflow-x: hidden;
+    background: #f8f7f4;
+    color: #242424;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
 }
 
-/* HEADER */
+::selection {
+    background: #ded8cf;
+    color: #242424;
+}
 
-header {
-  width: 100%;
-  padding: 32px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-  background: #f8f7f4;
+/* NAVIGATION */
+
+nav {
+    position: relative;
+    width: 100%;
+    padding: 32px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e5df;
 }
 
 .logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 27px;
-  letter-spacing: 2px;
-  white-space: nowrap;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 29px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
-nav {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: #181818;
-  font-size: 10px;
-  letter-spacing: 2px;
-  transition: opacity 0.3s;
-}
-
-nav a:hover {
-  opacity: 0.45;
+.nav-right {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #777;
 }
 
 /* HERO */
 
 .hero {
-  min-height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 90px 20px;
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 110px 24px;
+}
+
+.hero-small {
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #8b8177;
+    margin-bottom: 28px;
 }
 
 .hero h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(65px, 12vw, 165px);
-  font-weight: 300;
-  letter-spacing: 5px;
-  line-height: 1;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(75px, 13vw, 170px);
+    font-weight: 300;
+    letter-spacing: -3px;
+    line-height: 1;
 }
 
-.hero p {
-  margin-top: 30px;
-  font-size: 11px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  line-height: 2;
+.hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(22px, 3vw, 35px);
+    font-style: italic;
+    margin-top: 30px;
+    color: #777;
 }
 
 .hero-line {
-  width: 1px;
-  height: 75px;
-  background: #777;
-  margin-top: 65px;
+    width: 1px;
+    height: 75px;
+    background: #c7c0b7;
+    margin-top: 65px;
 }
 
-/* GALLERY */
+/* STORY */
 
-.gallery {
-  width: 88%;
-  max-width: 1400px;
-  margin: 0 auto;
+.story {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 105px 30px;
+    text-align: center;
 }
+
+.story h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 6vw, 72px);
+    font-weight: 400;
+    margin-bottom: 55px;
+    line-height: 1.1;
+}
+
+.story p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(23px, 2.5vw, 31px);
+    line-height: 1.65;
+    margin-bottom: 30px;
+    color: #37332f;
+}
+
+.story p:last-child {
+    margin-bottom: 0;
+}
+
+.story .emphasis {
+    font-style: italic;
+    font-size: clamp(27px, 3vw, 38px);
+}
+
+.story .small-text {
+    font-size: clamp(21px, 2.3vw, 27px);
+}
+
+.story-divider {
+    width: 38px;
+    height: 1px;
+    background: #c7c0b7;
+    margin: 50px auto;
+}
+
+/* ARTWORK */
 
 .artwork {
-  margin-bottom: 140px;
-  text-align: center;
+    width: 100%;
+    padding: 90px 25px 100px;
+    text-align: center;
 }
 
-.artwork-image {
-  display: block;
-  width: 100%;
-  max-height: 850px;
-  object-fit: contain;
-  cursor: zoom-in;
-  transition: transform 0.6s ease;
+.artwork-inner {
+    max-width: 1000px;
+    margin: auto;
 }
 
-.artwork-image:hover {
-  transform: scale(1.015);
+.artwork img {
+    display: block;
+    max-width: 100%;
+    max-height: 82vh;
+    width: auto;
+    height: auto;
+    margin: auto;
+    object-fit: contain;
+    cursor: zoom-in;
+    box-shadow: 0 18px 55px rgba(0,0,0,0.075);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.artwork h2 {
-  margin-top: 30px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 38px;
-  font-weight: 300;
+.artwork img:hover {
+    transform: scale(1.012);
+    box-shadow: 0 25px 65px rgba(0,0,0,0.11);
 }
 
-/* ARTWORK DETAILS */
+.artwork-info {
+    margin-top: 42px;
+}
+
+.artwork-number {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.artwork-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 4vw, 51px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
 
 .artwork-details {
-  margin-top: 15px;
-  text-align: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 2.2;
+    color: #85817b;
 }
 
-.artwork-details .style {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-style: italic;
-  letter-spacing: 1px;
-  color: #555;
-  margin-bottom: 20px;
+/* QUOTE */
+
+.quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(28px, 4vw, 45px);
+    line-height: 1.45;
+    margin: 55px auto;
+    max-width: 680px;
 }
 
-.artwork-details .medium,
-.artwork-details .dimensions,
-.artwork-details .year {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  letter-spacing: 1px;
-  color: #777;
-  line-height: 2.2;
-  margin-top: 2px;
+/* SIGNATURE */
+
+.signature-section {
+    text-align: center;
+    padding: 120px 25px 150px;
 }
 
-/* ABOUT */
-
-.about {
-  background: #eeede8;
-  padding: 140px 12%;
-  text-align: center;
+.signature-line {
+    width: 45px;
+    height: 1px;
+    background: #b8afa4;
+    margin: 0 auto 50px;
 }
 
-.about h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 60px;
-  font-weight: 300;
+.signature-greeting {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    font-style: italic;
+    margin-bottom: 35px;
 }
 
-.about p {
-  max-width: 650px;
-  margin: 30px auto 0;
-  font-size: 14px;
-  line-height: 2.2;
-  color: #444;
+.signature-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(42px, 6vw, 70px);
+    font-weight: 400;
 }
 
-/* CONTACT */
-
-.contact {
-  text-align: center;
-  padding: 110px 20px;
-}
-
-.contact h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 55px;
-  font-weight: 300;
-}
-
-.contact p {
-  margin-top: 20px;
-  font-size: 12px;
-  letter-spacing: 2px;
+.signature-role {
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 2.2;
+    color: #888;
+    margin-top: 20px;
 }
 
 /* FOOTER */
 
 footer {
-  border-top: 1px solid #ddd;
-  padding: 45px 20px;
-  text-align: center;
+    border-top: 1px solid #e8e5df;
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999;
 }
 
-footer p {
-  font-size: 10px;
-  letter-spacing: 2px;
-  line-height: 2;
-  color: #666;
-}
-
-/* FULLSCREEN IMAGE VIEWER */
+/* LIGHTBOX */
 
 .lightbox {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.96);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  padding: 65px 20px 20px;
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(12,12,12,0.97);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 20px;
 }
 
 .lightbox.active {
-  display: flex;
+    display: flex;
 }
 
 .lightbox img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
 }
 
-.close-lightbox {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+.lightbox-close {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 10000;
 }
 
-/* SCROLL ANIMATION */
+/* ANIMATIONS */
 
 .reveal {
-  opacity: 0;
-  transform: translateY(35px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* MOBILE */
 
-@media (max-width: 700px) {
+@media(max-width: 768px) {
 
-  header {
-    flex-direction: column;
-    padding: 25px 15px;
-  }
+    nav {
+        padding: 25px 6%;
+    }
 
-  .logo {
-    font-size: 25px;
-  }
+    .logo {
+        font-size: 24px;
+    }
 
-  nav {
-    justify-content: center;
-    gap: 18px;
-  }
+    .nav-right {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
 
-  .hero {
-    min-height: 55vh;
-    padding: 75px 15px;
-  }
+    .hero {
+        min-height: 65vh;
+        padding: 90px 20px;
+    }
 
-  .hero h1 {
-    font-size: clamp(45px, 11vw, 75px);
-    letter-spacing: 1px;
-  }
+    .hero h1 {
+        font-size: clamp(55px, 14vw, 90px);
+        letter-spacing: -2px;
+    }
 
-  .hero p {
-    font-size: 9px;
-    letter-spacing: 2px;
-  }
+    .story {
+        padding: 75px 27px;
+    }
 
-  .gallery {
-    width: 94%;
-  }
+    .story p {
+        font-size: 24px;
+        line-height: 1.6;
+    }
 
-  .artwork {
-    margin-bottom: 85px;
-  }
+    .artwork {
+        padding: 55px 18px 70px;
+    }
 
-  .artwork h2 {
-    font-size: 31px;
-  }
+    .artwork img {
+        max-height: 75vh;
+    }
 
-  .artwork-details .style {
-    font-size: 20px;
-  }
+    .artwork-info {
+        margin-top: 32px;
+    }
 
-  .artwork-details .medium,
-  .artwork-details .dimensions,
-  .artwork-details .year {
-    font-size: 10px;
-  }
+    .artwork-details {
+        font-size: 10px;
+    }
 
-  .about {
-    padding: 90px 8%;
-  }
-
-  .about h2 {
-    font-size: 45px;
-  }
-
-  .contact {
-    padding: 90px 20px;
-  }
-
+    .signature-section {
+        padding: 90px 20px 110px;
+    }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media(prefers-reduced-motion: reduce) {
 
-  html {
-    scroll-behavior: auto;
-  }
+    html {
+        scroll-behavior: auto;
+    }
 
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 
-  .artwork-image {
-    transition: none;
-  }
-
+    .artwork img {
+        transition: none;
+    }
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- HEADER -->
 
-<header>
+<!-- NAVIGATION -->
 
-  <div class="logo">DR. THEOLOGOU</div>
+<nav>
 
-  <nav>
-    <a href="#home">HOME</a>
-    <a href="#artworks">ARTWORKS</a>
-    <a href="#about">ABOUT</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+    <div class="logo">UNSALABLE</div>
 
-</header>
+    <div class="nav-right">
+        DR. THEOLOGOS THEOLOGOU
+    </div>
+
+</nav>
 
 
 <!-- HERO -->
 
-<section class="hero" id="home">
+<section class="hero">
 
-  <h1>UNSALABLE</h1>
+    <div class="hero-small">
+        THE ART OF THE HUMAN SOUL
+    </div>
 
-  <p>I operate by day. I paint by night.</p>
+    <h1>UNSALABLE</h1>
 
-  <div class="hero-line"></div>
+    <div class="hero-subtitle">
+        I operate by day. I paint by night.
+    </div>
+
+    <div class="hero-line"></div>
 
 </section>
 
 
-<!-- ARTWORK GALLERY -->
 
-<main class="gallery" id="artworks">
+<!-- INTRODUCTION -->
 
-  <!-- 01 MEDUSA -->
+<section class="story reveal">
 
-  <article class="artwork reveal">
+    <h2>Painting with a Scalpel</h2>
 
-    <img
-      class="artwork-image"
-      src="images/medusa.jpg"
-      alt="Medusa — Dr. Theologos Theologou"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
+    <p>
+        Can a doctor spend an entire lifetime
+        giving nothing but life?
+    </p>
 
-    <h2>MEDUSA</h2>
+    <p>
+        And could such a rare gift be accompanied
+        by an even rarer talent:
+        the ability to paint portraits
+        with surgical precision?
+    </p>
 
-    <div class="artwork-details">
-      <p class="style">Hyperrealism</p>
-      <p class="medium">Medium: Colored Pencils on Canvas</p>
-      <p class="dimensions">Dimensions: 60 × 90 cm</p>
-      <p class="year">Year: 2026</p>
-    </div>
+    <p class="emphasis">
+        With a scalpel?
+    </p>
 
-  </article>
-
-
-  <!-- 02 SAVIOR -->
-
-  <article class="artwork reveal">
-
-    <img
-      class="artwork-image"
-      src="images/IMG_9437.JPG"
-      alt="Savior — Dr. Theologos Theologou"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
-
-    <h2>Savior</h2>
-
-    <div class="artwork-details">
-      <p class="style">Hyperrealism</p>
-      <p class="medium">Medium: Colored Pencils on Canvas</p>
-      <p class="dimensions">Dimensions: 60 × 90 cm</p>
-      <p class="year">Year: 2026</p>
-    </div>
-
-  </article>
-
-
-  <!-- 03 THE WEEPING VIRGIN MARY -->
-
-  <article class="artwork reveal">
-
-    <img
-      class="artwork-image"
-      src="images/IMG_9444%202.jpg"
-      alt="The Weeping Virgin Mary — Dr. Theologos Theologou"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
-
-    <h2>The Weeping Virgin Mary</h2>
-
-    <div class="artwork-details">
-      <p class="style">Hyperrealism</p>
-      <p class="medium">Medium: Colored Pencils on Canvas</p>
-      <p class="dimensions">Dimensions: 60 × 90 cm</p>
-      <p class="year">Year: 2026</p>
-    </div>
-
-  </article>
-
-
-  <!-- 04 ARTEMIS -->
-
-  <article class="artwork reveal">
-
-    <img
-      class="artwork-image"
-      src="images/IMG_9453.JPG"
-      alt="Artemis — Dr. Theologos Theologou"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
-
-    <h2>Artemis</h2>
-
-    <div class="artwork-details">
-      <p class="style">Hyperrealism</p>
-      <p class="medium">Medium: Colored Pencils on Canvas</p>
-      <p class="dimensions">Dimensions: 60 × 90 cm</p>
-      <p class="year">Year: 2026</p>
-    </div>
-
-  </article>
-
-
-  <!-- 05 LUCIFER FALLING -->
-
-  <article class="artwork reveal">
-
-    <img
-      class="artwork-image"
-      src="images/IMG_9454%202.jpg"
-      alt="Lucifer Falling — Dr. Theologos Theologou"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
-
-    <h2>Lucifer Falling</h2>
-
-    <div class="artwork-details">
-      <p class="style">Hyperrealism</p>
-      <p class="medium">Medium: Colored Pencils on Canvas</p>
-      <p class="dimensions">Dimensions: 60 × 90 cm</p>
-      <p class="year">Year: 2026</p>
-    </div>
-
-  </article>
-
-
-  <!-- 06 THE VIRGIN MARY WITH THE LILY -->
-
-  <article class="artwork reveal">
-
-    <img
-      class="artwork-image"
-      src="images/IMG_9460.JPG"
-      alt="The Virgin Mary with the Lily — Dr. Theologos Theologou"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
-
-    <h2>The Virgin Mary with the Lily</h2>
-
-    <div class="artwork-details">
-      <p class="style">Hyperrealism</p>
-      <p class="medium">Medium: Colored Pencils on Canvas</p>
-      <p class="dimensions">Dimensions: 60 × 90 cm</p>
-      <p class="year">Year: 2026</p>
-    </div>
-
-  </article>
-
-
-  <!-- 07 THE LITTLE MATCH GIRL -->
-
-  <article class="artwork reveal">
-
-    <img
-      class="artwork-image"
-      src="images/IMG_9491.JPG"
-      alt="The Little Match Girl — Dr. Theologos Theologou"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
-
-    <h2>The Little Match Girl</h2>
-
-    <div class="artwork-details">
-      <p class="style">Hyperrealism</p>
-      <p class="medium">Medium: Colored Pencils on Canvas</p>
-      <p class="dimensions">Dimensions: 60 × 90 cm</p>
-      <p class="year">Year: 2026</p>
-    </div>
-
-  </article>
-
-</main>
-
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-  <h2>The Artist</h2>
-
-  <p>
-    Dr. Theologos Theologou is a neurosurgeon and artist.
-    His artistic practice explores emotion, identity,
-    spirituality and the human experience.
-  </p>
-
-  <p>
-    Through the UNSALABLE collection, art becomes
-    a deeply personal expression beyond commercial value.
-  </p>
-
-  <p>
-    I operate by day. I paint by night.
-  </p>
+    <p>
+        Not merely to capture a face,
+        but to touch the very essence of the soul?
+    </p>
 
 </section>
 
 
-<!-- CONTACT -->
 
-<section class="contact" id="contact">
+<!-- ARTWORK 1: MEDUSA -->
 
-  <h2>Contact</h2>
+<section class="artwork reveal">
 
-  <p>For artistic inquiries and collaborations</p>
+    <div class="artwork-inner">
+
+        <img
+            src="images/medusa.jpg"
+            alt="MEDUSA — Artwork by Theologos Theologou"
+            loading="lazy"
+            onclick="openLightbox(this)"
+        >
+
+        <div class="artwork-info">
+
+            <div class="artwork-number">01 / 07</div>
+
+            <h2 class="artwork-title">MEDUSA</h2>
+
+            <div class="artwork-details">
+                Hyperrealism<br>
+                Medium: Colored Pencils on Pastelmat<br>
+                Dimensions: 60 × 90 cm<br>
+                Year: 2026
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- FOOTER -->
 
-<footer>
+<!-- STORY 2 -->
 
-  <p>DR. THEOLOGOS THEOLOGOU</p>
+<section class="story reveal">
 
-  <p>UNSALABLE COLLECTION</p>
+    <p class="emphasis">
+        A neurosurgeon who operates with brushstrokes.
+    </p>
 
-  <p>© <span id="year"></span> ALL RIGHTS RESERVED</p>
+    <p>
+        A painter of the soul, revealing the quintessence
+        of human existence through thousands
+        of infinitesimal pencil strokes and scalpel cuts.
+    </p>
 
-</footer>
+    <div class="story-divider"></div>
+
+    <p>
+        Every day, the doctor observes Pain.
+    </p>
+
+    <p>
+        And one day, he asks it:
+    </p>
+
+    <p>
+        — How many scalpel cuts make up the human soul?
+    </p>
+
+    <p>
+        How can I connect the neurons
+        so that they become healing?
+    </p>
+
+    <p>
+        How can I free you from the Human Being?
+    </p>
+
+</section>
 
 
-<!-- IMAGE VIEWER -->
 
-<div
-  class="lightbox"
-  id="lightbox"
-  role="dialog"
-  aria-modal="true"
-  aria-label="Artwork image viewer"
-  onclick="closeLightbox()"
->
+<!-- ARTWORK 2: SAVIOR -->
 
-  <button
-    class="close-lightbox"
-    type="button"
-    aria-label="Close image viewer"
-    onclick="closeLightbox()"
-  >
-    &times;
-  </button>
+<section class="artwork reveal">
 
-  <img id="lightbox-img" alt="Enlarged artwork">
+    <div class="artwork-inner">
 
-</div>
+        <img
+            src="images/IMG_9437.JPG"
+            alt="Savior — Artwork by Theologos Theologou"
+            loading="lazy"
+            onclick="openLightbox(this)"
+        >
+
+        <div class="artwork-info">
+
+            <div class="artwork-number">02 / 07</div>
+
+            <h2 class="artwork-title">Savior</h2>
+
+            <div class="artwork-details">
+                Hyperrealism<br>
+                Medium: Colored Pencils on Pastelmat<br>
+                Dimensions: 60 × 90 cm<br>
+                Year: 2026
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-<!-- JAVASCRIPT -->
 
-<script>
+<!-- STORY 3 -->
 
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightbox-img");
+<section class="story reveal">
 
-function openLightbox(img) {
+    <p>
+        And Pain replies:
+    </p>
 
-  if (!img.complete || img.naturalWidth === 0) return;
+    <p>
+        — Cut the Human Being away from me with precision.
+        Carve marks around his wounded aura.
+        That way, he will remember me,
+        and I will be set free.
+    </p>
 
-  lightboxImage.src = img.src;
-  lightboxImage.alt = img.alt;
+    <div class="story-divider"></div>
 
-  lightbox.classList.add("active");
+    <p>
+        The microscope no longer shows him neurons.
+    </p>
 
-  document.body.style.overflow = "hidden";
+    <p class="emphasis">
+        It shows him one single Soul.
+    </p>
 
-}
+    <p>
+        And Pain screams:
+    </p>
 
-function closeLightbox() {
+    <p>
+        — That one! Take it away from me!
+    </p>
 
-  lightbox.classList.remove("active");
+    <p>
+        The neurosurgeon wonders:
+        How can I separate the Soul from Pain?
+    </p>
 
-  lightboxImage.removeAttribute("src");
+    <p>
+        And so he takes the scalpel in one hand.
+        And the pencil in the other.
+    </p>
 
-  document.body.style.overflow = "";
+    <p class="emphasis">
+        Scalpel — Pencil.<br>
+        Pain — Soul.
+    </p>
 
-}
+    <p>
+        And he sets them against one another.
+    </p>
 
-document.addEventListener("keydown", function(event) {
+    <p>
+        To fight.<br>
+        And to win.<br>
+        Both of them.
+    </p>
 
-  if (event.key === "Escape") {
-    closeLightbox();
-  }
+    <p>
+        Reconciled for the first time
+        on the same sheet of paper.
+    </p>
 
-});
+    <p class="emphasis">
+        Inseparable.<br>
+        Indistinguishable.<br>
+        Invincible.
+    </p>
 
-const observer = new IntersectionObserver(
+    <div class="story-divider"></div>
 
-  function(entries) {
+    <p>
+        Eight thousand neurosurgical operations.
+        Eight thousand souls alive.
+    </p>
 
-    entries.forEach(function(entry) {
+    <p>
+        Eight thousand times when the hand
+        had to be precise,
+        while the soul had to remain present.
+    </p>
 
-      if (entry.isIntersecting) {
+    <p>
+        Because when you give Pain a name and a form,
+        you can drive it out of the Human Being.
+    </p>
 
-        entry.target.classList.add("visible");
+    <p class="emphasis">
+        That is where painting begins.
+    </p>
 
-        observer.unobserve(entry.target);
+</section>
 
-      }
 
-    });
 
-  },
+<!-- ARTWORK 3: THE WEEPING VIRGIN MARY -->
 
-  {
-    threshold: 0.08
-  }
+<section class="artwork reveal">
 
-);
+    <div class="artwork-inner">
 
-document.querySelectorAll(".reveal").forEach(function(element) {
+        <img
+            src="images/IMG_9444%202.jpg"
+            alt="The Weeping Virgin Mary — Artwork by Theologos Theologou"
+            loading="lazy"
+            onclick="openLightbox(this)"
+        >
 
-  observer.observe(element);
+        <div class="artwork-info">
 
-});
+            <div class="artwork-number">03 / 07</div>
 
-document.getElementById("year").textContent =
-  new Date().getFullYear();
+            <h2 class="artwork-title">
+                The Weeping Virgin Mary
+            </h2>
 
-</script>
+            <div class="artwork-details">
+                Hyperrealism<br>
+                Medium: Colored Pencils on Pastelmat<br>
+                Dimensions: 60 × 90 cm<br>
+                Year: 2026
+            </div>
 
-</body>
-</html>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- STORY 4 -->
+
+<section class="story reveal">
+
+    <p class="emphasis">
+        And yet, there is a paradox.
+    </p>
+
+    <p>
+        In the operating room,
+        the hand must remain absolutely steady.
+    </p>
+
+    <p>
+        In painting,
+        it must dare to tremble.
+    </p>
+
+    <p>
+        In the operating room,
+        the eye searches for anatomy.
+    </p>
+
+    <p>
+        In painting,
+        it searches for that which has no anatomy.
+    </p>
+
+    <p class="emphasis">
+        The soul.
+    </p>
+
+</section>
+
+
+
+<!-- ARTWORK 4: ARTEMIS -->
+
+<section class="artwork reveal">
+
+    <div class="artwork-inner">
+
+        <img
+            src="images/IMG_9453.JPG"
+            alt="Artemis — Artwork by Theologos Theologou"
+            loading="lazy"
+            onclick="openLightbox(this)"
+        >
+
+        <div class="artwork-info">
+
+            <div class="artwork-number">04 / 07</div>
+
+            <h2 class="artwork-title">Artemis</h2>
+
+            <div class="artwork-details">
+                Hyperrealism<br>
+                Medium: Colored P
