@@ -5,11 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>UNSALABLE — Dr. Theologos Theologou</title>
-<meta name="description" content="UNSALABLE — The official art portfolio of Dr. Theologos Theologou. Painting with a Scalpel. I operate by day. I paint by night.">
+
+<meta name="description" content="UNSALABLE — The art portfolio of Dr. Theologos Theologou. Painting with a Scalpel. I operate by day. I paint by night.">
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
+
+/* GENERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +137,8 @@ nav a:hover {
   font-weight: 300;
 }
 
+/* ARTWORK DETAILS */
+
 .artwork-details {
   margin-top: 15px;
   text-align: center;
@@ -158,45 +164,45 @@ nav a:hover {
   margin-top: 2px;
 }
 
-/* NARRATIVE */
+/* STORY */
 
-.narrative {
-  max-width: 800px;
-  margin: 0 auto 115px;
-  padding: 65px 30px;
+.story {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 80px 25px 125px;
   text-align: center;
 }
 
-.narrative h2 {
+.story h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(43px, 6vw, 70px);
+  font-size: clamp(43px, 6vw, 68px);
   font-weight: 300;
   line-height: 1.15;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
-.narrative p {
+.story p {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(23px, 2.7vw, 30px);
+  font-size: clamp(23px, 2.5vw, 30px);
   line-height: 1.65;
-  color: #37332f;
-  margin-bottom: 30px;
+  color: #38332f;
+  margin-bottom: 28px;
 }
 
-.narrative p:last-child {
+.story p:last-child {
   margin-bottom: 0;
 }
 
-.narrative .emphasis {
+.story .emphasis {
   font-style: italic;
   font-size: clamp(26px, 3vw, 36px);
 }
 
-.narrative-divider {
-  width: 40px;
+.story-divider {
+  width: 42px;
   height: 1px;
-  background: #b8afa4;
-  margin: 50px auto;
+  background: #bdb6ac;
+  margin: 45px auto;
 }
 
 /* ABOUT */
@@ -221,32 +227,6 @@ nav a:hover {
   color: #444;
 }
 
-/* SIGNATURE */
-
-.signature {
-  padding: 40px 20px 100px;
-  text-align: center;
-}
-
-.signature p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 25px;
-  line-height: 1.7;
-}
-
-.signature .signature-name {
-  font-size: 42px;
-  margin-top: 25px;
-}
-
-.signature .signature-role {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  letter-spacing: 1px;
-  color: #777;
-  margin-top: 12px;
-}
-
 /* CONTACT */
 
 .contact {
@@ -264,6 +244,35 @@ nav a:hover {
   margin-top: 20px;
   font-size: 12px;
   letter-spacing: 2px;
+  line-height: 2;
+}
+
+/* SIGNATURE */
+
+.signature {
+  text-align: center;
+  padding: 60px 20px 125px;
+}
+
+.signature-greeting {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.signature-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(42px, 6vw, 65px);
+  font-weight: 300;
+}
+
+.signature-role {
+  margin-top: 18px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  line-height: 2.2;
+  color: #777;
 }
 
 /* FOOTER */
@@ -325,6 +334,7 @@ footer p {
 /* MOBILE */
 
 @media (max-width: 700px) {
+
   header {
     flex-direction: column;
     padding: 25px 15px;
@@ -359,7 +369,7 @@ footer p {
   }
 
   .artwork {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
   }
 
   .artwork h2 {
@@ -376,12 +386,11 @@ footer p {
     font-size: 10px;
   }
 
-  .narrative {
-    padding: 45px 20px;
-    margin-bottom: 80px;
+  .story {
+    padding: 65px 20px 95px;
   }
 
-  .narrative p {
+  .story p {
     font-size: 24px;
   }
 
@@ -396,6 +405,7 @@ footer p {
   .contact {
     padding: 90px 20px;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -407,6 +417,7 @@ footer p {
     transition: none;
   }
 }
+
 </style>
 </head>
 
@@ -415,48 +426,69 @@ footer p {
 <!-- HEADER -->
 
 <header>
+
   <div class="logo">DR. THEOLOGOU</div>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#home">HOME</a>
     <a href="#artworks">ARTWORKS</a>
     <a href="#about">ABOUT</a>
     <a href="#contact">CONTACT</a>
   </nav>
+
 </header>
 
 <!-- HERO -->
 
 <section class="hero" id="home">
+
   <h1>UNSALABLE</h1>
+
   <p>I operate by day. I paint by night.</p>
+
   <div class="hero-line"></div>
+
+</section>
+
+<!-- INTRODUCTION -->
+
+<section class="story">
+
+  <h2>Painting with a Scalpel</h2>
+
+  <p>
+    Can a doctor spend an entire lifetime giving nothing but life?
+  </p>
+
+  <p>
+    And could such a rare gift be accompanied by an even rarer talent:
+    the ability to paint portraits with surgical precision?
+  </p>
+
+  <p class="emphasis">With a scalpel?</p>
+
+  <p>
+    Not merely to capture a face,
+    but to touch the very essence of the soul?
+  </p>
+
 </section>
 
 <!-- GALLERY AND STORY -->
 
 <main class="gallery" id="artworks">
 
-  <!-- INTRODUCTION -->
-
-  <section class="narrative">
-    <h2>Painting with a Scalpel</h2>
-
-    <p>Can a doctor spend an entire lifetime giving nothing but life?</p>
-
-    <p>And could such a rare gift be accompanied by an even rarer talent: the ability to paint portraits with surgical precision?</p>
-
-    <p class="emphasis">With a scalpel?</p>
-
-    <p>Not merely to capture a face, but to touch the very essence of the soul?</p>
-  </section>
-
   <!-- 01 MEDUSA -->
 
   <article class="artwork">
-    <img class="artwork-image" src="images/medusa.jpg"
+
+    <img
+      class="artwork-image"
+      src="images/medusa.jpg"
       alt="Medusa — Dr. Theologos Theologou"
-      loading="lazy" onclick="openLightbox(this)">
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
 
     <h2>MEDUSA</h2>
 
@@ -466,32 +498,50 @@ footer p {
       <p class="dimensions">Dimensions: 60 × 90 cm</p>
       <p class="year">Year: 2026</p>
     </div>
+
   </article>
 
   <!-- STORY 2 -->
 
-  <section class="narrative">
-    <p class="emphasis">A neurosurgeon who operates with brushstrokes.</p>
+  <section class="story">
 
-    <p>A painter of the soul, revealing the quintessence of human existence through thousands of infinitesimal pencil strokes and scalpel cuts.</p>
+    <p class="emphasis">
+      A neurosurgeon who operates with brushstrokes.
+    </p>
 
-    <div class="narrative-divider"></div>
+    <p>
+      A painter of the soul, revealing the quintessence
+      of human existence through thousands of infinitesimal
+      pencil strokes and scalpel cuts.
+    </p>
+
+    <div class="story-divider"></div>
 
     <p>Every day, the doctor observes Pain.</p>
 
     <p>And one day, he asks it:</p>
 
-    <p>— How many scalpel cuts make up the human soul?<br>
-    How can I connect the neurons so that they become healing?<br>
-    How can I free you from the Human Being?</p>
+    <p>— How many scalpel cuts make up the human soul?</p>
+
+    <p>
+      How can I connect the neurons so that they become healing?
+    </p>
+
+    <p>How can I free you from the Human Being?</p>
+
   </section>
 
   <!-- 02 SAVIOR -->
 
   <article class="artwork">
-    <img class="artwork-image" src="images/IMG_9437.JPG"
+
+    <img
+      class="artwork-image"
+      src="images/IMG_9437.JPG"
       alt="Savior — Dr. Theologos Theologou"
-      loading="lazy" onclick="openLightbox(this)">
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
 
     <h2>Savior</h2>
 
@@ -501,14 +551,22 @@ footer p {
       <p class="dimensions">Dimensions: 60 × 90 cm</p>
       <p class="year">Year: 2026</p>
     </div>
+
   </article>
 
   <!-- STORY 3 -->
 
-  <section class="narrative">
+  <section class="story">
+
     <p>And Pain replies:</p>
 
-    <p>— Cut the Human Being away from me with precision. Carve marks around his wounded aura. That way, he will remember me, and I will be set free.</p>
+    <p>
+      — Cut the Human Being away from me with precision.
+      Carve marks around his wounded aura.
+      That way, he will remember me, and I will be set free.
+    </p>
+
+    <div class="story-divider"></div>
 
     <p>The microscope no longer shows him neurons.</p>
 
@@ -518,37 +576,71 @@ footer p {
 
     <p>— That one! Take it away from me!</p>
 
-    <p>The neurosurgeon wonders: How can I separate the Soul from Pain?</p>
+    <p>
+      The neurosurgeon wonders:
+      How can I separate the Soul from Pain?
+    </p>
 
-    <p>And so he takes the scalpel in one hand. And the pencil in the other.</p>
+    <p>
+      And so he takes the scalpel in one hand.
+      And the pencil in the other.
+    </p>
 
-    <p class="emphasis">Scalpel — Pencil.<br>Pain — Soul.</p>
+    <p class="emphasis">
+      Scalpel — Pencil.<br>
+      Pain — Soul.
+    </p>
 
     <p>And he sets them against one another.</p>
 
-    <p>To fight.<br>And to win.<br>Both of them.</p>
+    <p>
+      To fight.<br>
+      And to win.<br>
+      Both of them.
+    </p>
 
-    <p>Reconciled for the first time on the same sheet of paper.</p>
+    <p>
+      Reconciled for the first time on the same sheet of paper.
+    </p>
 
-    <p class="emphasis">Inseparable. Indistinguishable. Invincible.</p>
+    <p class="emphasis">
+      Inseparable.<br>
+      Indistinguishable.<br>
+      Invincible.
+    </p>
 
-    <div class="narrative-divider"></div>
+    <div class="story-divider"></div>
 
-    <p>Eight thousand neurosurgical operations. Eight thousand souls alive.</p>
+    <p>
+      Eight thousand neurosurgical operations.
+      Eight thousand souls alive.
+    </p>
 
-    <p>Eight thousand times when the hand had to be precise, while the soul had to remain present.</p>
+    <p>
+      Eight thousand times when the hand had to be precise,
+      while the soul had to remain present.
+    </p>
 
-    <p>Because when you give Pain a name and a form, you can drive it out of the Human Being.</p>
+    <p>
+      Because when you give Pain a name and a form,
+      you can drive it out of the Human Being.
+    </p>
 
     <p class="emphasis">That is where painting begins.</p>
+
   </section>
 
   <!-- 03 THE WEEPING VIRGIN MARY -->
 
   <article class="artwork">
-    <img class="artwork-image" src="images/IMG_9444%202.jpg"
+
+    <img
+      class="artwork-image"
+      src="images/IMG_9444%202.jpg"
       alt="The Weeping Virgin Mary — Dr. Theologos Theologou"
-      loading="lazy" onclick="openLightbox(this)">
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
 
     <h2>The Weeping Virgin Mary</h2>
 
@@ -558,30 +650,44 @@ footer p {
       <p class="dimensions">Dimensions: 60 × 90 cm</p>
       <p class="year">Year: 2026</p>
     </div>
+
   </article>
 
   <!-- STORY 4 -->
 
-  <section class="narrative">
+  <section class="story">
+
     <p class="emphasis">And yet, there is a paradox.</p>
 
-    <p>In the operating room, the hand must remain absolutely steady.</p>
+    <p>
+      In the operating room, the hand must remain absolutely steady.
+    </p>
 
     <p>In painting, it must dare to tremble.</p>
 
-    <p>In the operating room, the eye searches for anatomy.</p>
+    <p>
+      In the operating room, the eye searches for anatomy.
+    </p>
 
-    <p>In painting, it searches for that which has no anatomy.</p>
+    <p>
+      In painting, it searches for that which has no anatomy.
+    </p>
 
     <p class="emphasis">The soul.</p>
+
   </section>
 
   <!-- 04 ARTEMIS -->
 
   <article class="artwork">
-    <img class="artwork-image" src="images/IMG_9453.JPG"
+
+    <img
+      class="artwork-image"
+      src="images/IMG_9453.JPG"
       alt="Artemis — Dr. Theologos Theologou"
-      loading="lazy" onclick="openLightbox(this)">
+      loading="lazy"
+      onclick="openLightbox(this)"
+    >
 
     <h2>Artemis</h2>
 
@@ -591,25 +697,5 @@ footer p {
       <p class="dimensions">Dimensions: 60 × 90 cm</p>
       <p class="year">Year: 2026</p>
     </div>
-  </article>
 
-  <!-- STORY 5 -->
-
-  <section class="narrative">
-    <p>That is why, whenever I look at a face, I wonder:</p>
-
-    <p>What has this person endured?<br>
-    What have they lost?<br>
-    What have they loved?<br>
-    What do they carry within them?<br>
-    What must they never forget?</p>
-
-    <p>The scalpel carves.<br>
-    The pencil remembers.<br>
-    The paper preserves the trace.</p>
-
-    <p>And the face begins to speak.</p>
-
-    <p>And then there is Him.</p>
-
-    <p>The hand reaching
+  </article
