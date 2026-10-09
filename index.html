@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>UNSALABLE — Dr. Theologos Theologou</title>
 
-<meta name="description" content="UNSALABLE — The official art portfolio of Dr. Theologos Theologou. Painting with a Scalpel. I operate by day. I paint by night.">
+<meta name="description" content="UNSALABLE — The official art portfolio of Dr. Theologos Theologou. Painting with a Scalpel.">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-
-/* GENERAL */
 
 * {
   margin: 0;
@@ -34,11 +30,6 @@ body {
   overflow-x: hidden;
 }
 
-::selection {
-  background: #ded8cf;
-  color: #181818;
-}
-
 /* HEADER */
 
 header {
@@ -48,7 +39,6 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
-  background: #f8f7f4;
 }
 
 .logo {
@@ -120,7 +110,7 @@ nav a:hover {
 }
 
 .artwork {
-  margin-bottom: 110px;
+  margin-bottom: 125px;
   text-align: center;
 }
 
@@ -144,8 +134,6 @@ nav a:hover {
   font-weight: 300;
 }
 
-/* ARTWORK DETAILS */
-
 .artwork-details {
   margin-top: 15px;
   text-align: center;
@@ -163,7 +151,6 @@ nav a:hover {
 .artwork-details .medium,
 .artwork-details .dimensions,
 .artwork-details .year {
-  font-family: 'Inter', sans-serif;
   font-size: 11px;
   letter-spacing: 1px;
   color: #777;
@@ -174,61 +161,44 @@ nav a:hover {
 /* STORY */
 
 .story {
-  max-width: 850px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 85px 30px 120px;
+  padding: 80px 22px 110px;
   text-align: center;
 }
 
 .story h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(45px, 6vw, 75px);
+  font-size: clamp(44px, 6vw, 70px);
   font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .story p {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(23px, 2.8vw, 31px);
-  font-weight: 400;
-  line-height: 1.65;
+  font-size: clamp(23px, 2.7vw, 31px);
+  line-height: 1.6;
   color: #37332f;
-  margin-bottom: 28px;
-}
-
-.story p:last-child {
-  margin-bottom: 0;
-}
-
-.story .emphasis {
-  font-style: italic;
-  font-size: clamp(27px, 3.2vw, 38px);
-}
-
-.story-divider {
-  width: 42px;
-  height: 1px;
-  background: #b8afa4;
-  margin: 55px auto;
+  margin-bottom: 24px;
 }
 
 /* ABOUT */
 
 .about {
   background: #eeede8;
-  padding: 140px 12%;
+  padding: 110px 12%;
   text-align: center;
 }
 
-.about h2 {
+.about h2,
+.contact h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 300;
 }
 
 .about p {
-  max-width: 700px;
+  max-width: 650px;
   margin: 30px auto 0;
   font-size: 14px;
   line-height: 2.2;
@@ -239,47 +209,37 @@ nav a:hover {
 
 .contact {
   text-align: center;
-  padding: 110px 20px;
-}
-
-.contact h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 55px;
-  font-weight: 300;
+  padding: 100px 20px;
 }
 
 .contact p {
   margin-top: 20px;
   font-size: 12px;
   letter-spacing: 2px;
-  line-height: 2;
 }
 
 /* SIGNATURE */
 
 .signature {
   text-align: center;
-  padding: 65px 20px 130px;
+  padding: 30px 20px 100px;
 }
 
 .signature p {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 25px;
+  font-size: 26px;
   line-height: 1.7;
 }
 
-.signature h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(42px, 6vw, 65px);
-  font-weight: 400;
-  margin: 20px 0;
+.signature .name {
+  font-size: 42px;
+  margin-top: 20px;
 }
 
 .signature .role {
   font-family: 'Inter', sans-serif;
   font-size: 11px;
-  letter-spacing: 2px;
-  line-height: 2.3;
+  letter-spacing: 1px;
   color: #777;
 }
 
@@ -298,7 +258,7 @@ footer p {
   color: #666;
 }
 
-/* FULLSCREEN IMAGE VIEWER */
+/* FULLSCREEN VIEWER */
 
 .lightbox {
   display: none;
@@ -332,7 +292,7 @@ footer p {
   cursor: pointer;
 }
 
-/* CONTENT ALWAYS VISIBLE */
+/* ALWAYS VISIBLE */
 
 .reveal {
   opacity: 1;
@@ -377,25 +337,15 @@ footer p {
   }
 
   .artwork {
-    margin-bottom: 75px;
+    margin-bottom: 85px;
   }
 
   .artwork h2 {
     font-size: 31px;
   }
 
-  .artwork-details .style {
-    font-size: 20px;
-  }
-
-  .artwork-details .medium,
-  .artwork-details .dimensions,
-  .artwork-details .year {
-    font-size: 10px;
-  }
-
   .story {
-    padding: 65px 20px 90px;
+    padding: 65px 18px 90px;
   }
 
   .story p {
@@ -405,19 +355,9 @@ footer p {
   .about {
     padding: 90px 8%;
   }
-
-  .about h2 {
-    font-size: 45px;
-  }
-
-  .contact {
-    padding: 90px 20px;
-  }
-
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   html {
     scroll-behavior: auto;
   }
@@ -425,20 +365,16 @@ footer p {
   .artwork-image {
     transition: none;
   }
-
 }
 
 </style>
-
 </head>
 
 <body>
 
-
 <!-- HEADER -->
 
 <header>
-
   <div class="logo">DR. THEOLOGOU</div>
 
   <nav>
@@ -447,22 +383,19 @@ footer p {
     <a href="#about">ABOUT</a>
     <a href="#contact">CONTACT</a>
   </nav>
-
 </header>
-
 
 <!-- HERO -->
 
 <section class="hero" id="home">
-
   <h1>UNSALABLE</h1>
-
   <p>I operate by day. I paint by night.</p>
-
   <div class="hero-line"></div>
-
 </section>
 
+<!-- GALLERY -->
+
+<main class="gallery" id="artworks">
 
 <!-- INTRODUCTION -->
 
@@ -470,18 +403,14 @@ footer p {
 
   <h2>Painting with a Scalpel</h2>
 
-  <p>
-    Can a doctor spend an entire lifetime giving nothing but life?
-  </p>
+  <p>Can a doctor spend an entire lifetime giving nothing but life?</p>
 
   <p>
     And could such a rare gift be accompanied by an even rarer talent:
     the ability to paint portraits with surgical precision?
   </p>
 
-  <p class="emphasis">
-    With a scalpel?
-  </p>
+  <p>With a scalpel?</p>
 
   <p>
     Not merely to capture a face,
@@ -489,12 +418,6 @@ footer p {
   </p>
 
 </section>
-
-
-<!-- ARTWORK GALLERY -->
-
-<main class="gallery" id="artworks">
-
 
 <!-- 01 MEDUSA -->
 
@@ -519,45 +442,28 @@ footer p {
 
 </article>
 
-
 <!-- STORY 2 -->
 
 <section class="story">
 
-  <p class="emphasis">
-    A neurosurgeon who operates with brushstrokes.
-  </p>
+  <p>A neurosurgeon who operates with brushstrokes.</p>
 
   <p>
-    A painter of the soul, revealing the quintessence
-    of human existence through thousands of infinitesimal
-    pencil strokes and scalpel cuts.
+    A painter of the soul, revealing the quintessence of human existence
+    through thousands of infinitesimal pencil strokes and scalpel cuts.
   </p>
 
-  <div class="story-divider"></div>
+  <p>Every day, the doctor observes Pain.</p>
 
-  <p>
-    Every day, the doctor observes Pain.
-  </p>
+  <p>And one day, he asks it:</p>
 
-  <p>
-    And one day, he asks it:
-  </p>
+  <p>— How many scalpel cuts make up the human soul?</p>
 
-  <p>
-    — How many scalpel cuts make up the human soul?
-  </p>
+  <p>How can I connect the neurons so that they become healing?</p>
 
-  <p>
-    How can I connect the neurons so that they become healing?
-  </p>
-
-  <p>
-    How can I free you from the Human Being?
-  </p>
+  <p>How can I free you from the Human Being?</p>
 
 </section>
-
 
 <!-- 02 SAVIOR -->
 
@@ -582,14 +488,11 @@ footer p {
 
 </article>
 
-
-<!-- STORY 3 -->
+  <!-- STORY 3 -->
 
 <section class="story">
 
-  <p>
-    And Pain replies:
-  </p>
+  <p>And Pain replies:</p>
 
   <p>
     — Cut the Human Being away from me with precision.
@@ -597,23 +500,13 @@ footer p {
     That way, he will remember me, and I will be set free.
   </p>
 
-  <div class="story-divider"></div>
+  <p>The microscope no longer shows him neurons.</p>
 
-  <p>
-    The microscope no longer shows him neurons.
-  </p>
+  <p>It shows him one single Soul.</p>
 
-  <p class="emphasis">
-    It shows him one single Soul.
-  </p>
+  <p>And Pain screams:</p>
 
-  <p>
-    And Pain screams:
-  </p>
-
-  <p>
-    — That one! Take it away from me!
-  </p>
+  <p>— That one! Take it away from me!</p>
 
   <p>
     The neurosurgeon wonders:
@@ -625,32 +518,24 @@ footer p {
     And the pencil in the other.
   </p>
 
-  <p class="emphasis">
-    Scalpel — Pencil.<br>
-    Pain — Soul.
-  </p>
+  <p>Scalpel — Pencil.</p>
+
+  <p>Pain — Soul.</p>
+
+  <p>And he sets them against one another.</p>
+
+  <p>To fight.</p>
+
+  <p>And to win.</p>
+
+  <p>Both of them.</p>
 
   <p>
-    And he sets them against one another.
+    Reconciled for the first time
+    on the same sheet of paper.
   </p>
 
-  <p>
-    To fight.<br>
-    And to win.<br>
-    Both of them.
-  </p>
-
-  <p>
-    Reconciled for the first time on the same sheet of paper.
-  </p>
-
-  <p class="emphasis">
-    Inseparable.<br>
-    Indistinguishable.<br>
-    Invincible.
-  </p>
-
-  <div class="story-divider"></div>
+  <p>Inseparable. Indistinguishable. Invincible.</p>
 
   <p>
     Eight thousand neurosurgical operations.
@@ -667,9 +552,7 @@ footer p {
     you can drive it out of the Human Being.
   </p>
 
-  <p class="emphasis">
-    That is where painting begins.
-  </p>
+  <p>That is where painting begins.</p>
 
 </section>
 
@@ -702,19 +585,14 @@ footer p {
 
 <section class="story">
 
-  <p class="emphasis">
-    And yet, there is a paradox.
-  </p>
+  <p>And yet, there is a paradox.</p>
 
   <p>
     In the operating room,
     the hand must remain absolutely steady.
   </p>
 
-  <p>
-    In painting,
-    it must dare to tremble.
-  </p>
+  <p>In painting, it must dare to tremble.</p>
 
   <p>
     In the operating room,
@@ -726,9 +604,7 @@ footer p {
     it searches for that which has no anatomy.
   </p>
 
-  <p class="emphasis">
-    The soul.
-  </p>
+  <p>The soul.</p>
 
 </section>
 
@@ -750,4 +626,404 @@ footer p {
   <div class="artwork-details">
     <p class="style">Hyperrealism</p>
     <p class="medium">Medium: Colored Pencils on Pastelmat</p>
-    <
+    <p class="dimensions">Dimensions: 60 × 90 cm</p>
+    <p class="year">Year: 2026</p>
+  </div>
+
+</article>
+
+
+<!-- STORY 5 -->
+
+<section class="story">
+
+  <p>That is why, whenever I look at a face, I wonder:</p>
+
+  <p>What has this person endured?</p>
+
+  <p>What have they lost?</p>
+
+  <p>What have they loved?</p>
+
+  <p>What do they carry within them?</p>
+
+  <p>What must they never forget?</p>
+
+  <p>The scalpel carves.</p>
+
+  <p>The pencil remembers.</p>
+
+  <p>The paper preserves the trace.</p>
+
+  <p>And the face begins to speak.</p>
+
+  <p>And then there is Him.</p>
+
+  <p>The hand reaching out toward the viewer.</p>
+
+  <p>Not to ask.</p>
+
+  <p>To offer.</p>
+
+</section>
+
+
+<!-- 05 LUCIFER FALLING -->
+
+<article class="artwork">
+
+  <img
+    class="artwork-image"
+    src="images/IMG_9454%202.jpg"
+    alt="Lucifer Falling — Dr. Theologos Theologou"
+    loading="lazy"
+    onclick="openLightbox(this)"
+  >
+
+  <h2>Lucifer Falling</h2>
+
+  <div class="artwork-details">
+    <p class="style">Hyperrealism</p>
+    <p class="medium">Medium: Colored Pencils on Pastelmat</p>
+    <p class="dimensions">Dimensions: 60 × 90 cm</p>
+    <p class="year">Year: 2026</p>
+  </div>
+
+</article>
+
+
+  <!-- STORY 6 -->
+
+<section class="story">
+
+  <p>
+    For a moment, the viewer ceases to be merely a viewer.
+  </p>
+
+  <p>
+    They become the person toward whom the hand is reaching.
+  </p>
+
+  <p>And then the work changes.</p>
+
+  <p>You are no longer looking at a portrait.</p>
+
+  <p>
+    You feel that the portrait is looking back at you.
+  </p>
+
+  <p>
+    This moment lies at the heart of my Tetralogy:
+  </p>
+
+  <p>Birth. Pain. Healing. Hope.</p>
+
+  <p>Four paintings, one narrative.</p>
+
+  <p>
+    Four moments in the human experience,
+    as I encounter them in the operating room and on paper.
+  </p>
+
+  <p>From darkness into light.</p>
+
+  <p>From injury to redemption.</p>
+
+  <p>
+    The outstretched hand is the same hand in all four.
+  </p>
+
+  <p>Sometimes it asks for help.</p>
+
+  <p>Sometimes it gives.</p>
+
+  <p>Sometimes it heals.</p>
+
+  <p>Sometimes it blesses.</p>
+
+</section>
+
+
+<!-- 06 THE VIRGIN MARY WITH THE LILY -->
+
+<article class="artwork">
+
+  <img
+    class="artwork-image"
+    src="images/IMG_9460.JPG"
+    alt="The Virgin Mary with the Lily — Dr. Theologos Theologou"
+    loading="lazy"
+    onclick="openLightbox(this)"
+  >
+
+  <h2>The Virgin Mary with the Lily</h2>
+
+  <div class="artwork-details">
+    <p class="style">Hyperrealism</p>
+    <p class="medium">Medium: Colored Pencils on Pastelmat</p>
+    <p class="dimensions">Dimensions: 60 × 90 cm</p>
+    <p class="year">Year: 2026</p>
+  </div>
+
+</article>
+
+
+<!-- STORY 7 -->
+
+<section class="story">
+
+  <p>
+    I am Theologos Theologou, neurosurgeon and
+    Director of the Department of Neurosurgery
+    at IASO GENERAL in Athens.
+  </p>
+
+  <p>
+    For me, painting has never been merely
+    a parallel interest.
+  </p>
+
+  <p>
+    During every operation, I visualise
+    the suffering soul and body — healed.
+  </p>
+
+  <p>
+    In this sense, every operation becomes,
+    for me, a painting of perfection.
+  </p>
+
+  <p>Am I a neurosurgeon who paints?</p>
+
+  <p>Or a painter who performs neurosurgery?</p>
+
+  <p>I do not know.</p>
+
+  <p>
+    I only know that, in both cases,
+    I stand before the same miracle:
+  </p>
+
+  <p>The Human Being.</p>
+
+  <p>
+    And I know that Science and Art
+    are two sides of the same need:
+  </p>
+
+  <p>
+    to touch what cannot be explained
+    and, if possible, to heal it.
+  </p>
+
+  <p>One hand holds the scalpel.</p>
+
+  <p>The other holds the pencil.</p>
+
+  <p>Between them stands the Human Being.</p>
+
+  <p>Pain.</p>
+
+  <p>The Soul.</p>
+
+  <p>Life.</p>
+
+</section>
+
+
+<!-- 07 THE LITTLE MATCH GIRL -->
+
+<article class="artwork">
+
+  <img
+    class="artwork-image"
+    src="images/IMG_9491.JPG"
+    alt="The Little Match Girl — Dr. Theologos Theologou"
+    loading="lazy"
+    onclick="openLightbox(this)"
+  >
+
+  <h2>The Little Match Girl</h2>
+
+  <div class="artwork-details">
+    <p class="style">Hyperrealism</p>
+    <p class="medium">Medium: Colored Pencils on Pastelmat</p>
+    <p class="dimensions">Dimensions: 60 × 90 cm</p>
+    <p class="year">Year: 2026</p>
+  </div>
+
+</article>
+
+
+<!-- FINAL STORY -->
+
+<section class="story">
+
+  <p>
+    And on the paper, the same question remains:
+  </p>
+
+  <p>Who prevailed?</p>
+
+  <p>Who lost?</p>
+
+  <p>Who claimed the spoils?</p>
+
+  <p>
+    Perhaps the answer belongs to the person
+    standing before the work.
+  </p>
+
+  <p>
+    And for a few seconds,
+    they are no longer looking at a painting.
+  </p>
+
+  <p>
+    They are looking within themselves.
+  </p>
+
+</section>
+
+</main>
+
+
+<!-- SIGNATURE -->
+
+<section class="signature">
+
+  <p>With kind regards,</p>
+
+  <p class="name">Theologos Theologou</p>
+
+  <p class="role">
+    Neurosurgeon &amp; Visual Artist<br>
+    Athens, Greece
+  </p>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <h2>The Artist</h2>
+
+  <p>
+    Dr. Theologos Theologou is a neurosurgeon and artist.
+    His artistic practice explores emotion, identity,
+    spirituality and the human experience.
+  </p>
+
+  <p>
+    Through the UNSALABLE collection, art becomes
+    a deeply personal expression beyond commercial value.
+  </p>
+
+  <p>
+    I operate by day. I paint by night.
+  </p>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <h2>Contact</h2>
+
+  <p>For artistic inquiries and collaborations</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>DR. THEOLOGOS THEOLOGOU</p>
+
+  <p>UNSALABLE COLLECTION</p>
+
+  <p>
+    © <span id="year">2026</span>
+    ALL RIGHTS RESERVED
+  </p>
+
+</footer>
+
+
+<!-- FULLSCREEN IMAGE VIEWER -->
+
+<div
+  class="lightbox"
+  id="lightbox"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Artwork image viewer"
+  onclick="closeLightbox()"
+>
+
+  <button
+    class="close-lightbox"
+    type="button"
+    aria-label="Close image viewer"
+    onclick="closeLightbox()"
+  >
+    &times;
+  </button>
+
+  <img id="lightbox-img" alt="Enlarged artwork">
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-img");
+
+function openLightbox(img) {
+
+  if (!img.complete || img.naturalWidth === 0) {
+    return;
+  }
+
+  lightboxImage.src = img.src;
+  lightboxImage.alt = img.alt;
+
+  lightbox.classList.add("active");
+
+  document.body.style.overflow = "hidden";
+
+}
+
+function closeLightbox() {
+
+  lightbox.classList.remove("active");
+
+  lightboxImage.removeAttribute("src");
+
+  document.body.style.overflow = "";
+
+}
+
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
