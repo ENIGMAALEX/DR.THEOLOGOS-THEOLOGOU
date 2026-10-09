@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>UNSALABLE — Dr. Theologos Theologou</title>
+<meta name="description" content="UNSALABLE — The art portfolio of Dr. Theologos Theologou. Painting with a Scalpel. I operate by day. I paint by night.">
 
-<meta name="description" content="UNSALABLE — The official art portfolio of Dr. Theologos Theologou. Painting with a Scalpel. I operate by day. I paint by night.">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
-/* GENERAL */
-
 * {
     margin: 0;
     padding: 0;
@@ -33,19 +30,12 @@ body {
     overflow-x: hidden;
 }
 
-::selection {
-    background: #ded8cf;
-    color: #242424;
-}
-
-/* NAVIGATION */
-
 nav {
-    width: 100%;
-    padding: 32px 7%;
+    padding: 30px 7%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     border-bottom: 1px solid #e8e5df;
 }
 
@@ -58,45 +48,44 @@ nav {
 
 .nav-right {
     font-size: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #777;
+    text-align: right;
 }
 
-/* HERO */
-
 .hero {
-    min-height: 78vh;
+    min-height: 75vh;
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 110px 24px;
 }
 
 .hero-small {
     font-size: 10px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     color: #8b8177;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(55px, 12vw, 170px);
+    font-size: clamp(54px, 12vw, 160px);
     font-weight: 300;
-    letter-spacing: -3px;
     line-height: 1;
+    overflow-wrap: anywhere;
 }
 
 .hero-subtitle {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(22px, 3vw, 35px);
+    font-size: clamp(23px, 3vw, 36px);
     font-style: italic;
-    margin-top: 30px;
     color: #777;
+    margin-top: 30px;
 }
 
 .hero-line {
@@ -106,21 +95,19 @@ nav {
     margin-top: 65px;
 }
 
-/* STORY */
-
 .story {
-    max-width: 780px;
+    max-width: 790px;
     margin: 0 auto;
-    padding: 105px 30px;
+    padding: 100px 30px;
     text-align: center;
 }
 
 .story h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(44px, 6vw, 72px);
+    font-size: clamp(45px, 6vw, 75px);
     font-weight: 400;
-    margin-bottom: 55px;
     line-height: 1.1;
+    margin-bottom: 55px;
 }
 
 .story p {
@@ -136,8 +123,8 @@ nav {
 }
 
 .story .emphasis {
-    font-style: italic;
     font-size: clamp(27px, 3vw, 38px);
+    font-style: italic;
 }
 
 .story-divider {
@@ -147,17 +134,14 @@ nav {
     margin: 50px auto;
 }
 
-/* ARTWORK */
-
 .artwork {
-    width: 100%;
     padding: 90px 25px 100px;
     text-align: center;
 }
 
 .artwork-inner {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .artwork img {
@@ -166,11 +150,11 @@ nav {
     max-height: 82vh;
     width: auto;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     object-fit: contain;
     cursor: zoom-in;
     box-shadow: 0 18px 55px rgba(0,0,0,0.075);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .artwork img:hover {
@@ -203,22 +187,9 @@ nav {
     color: #85817b;
 }
 
-/* QUOTE */
-
-.quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: clamp(28px, 4vw, 45px);
-    line-height: 1.45;
-    margin: 55px auto;
-    max-width: 680px;
-}
-
-/* SIGNATURE */
-
 .signature-section {
     text-align: center;
-    padding: 120px 25px 150px;
+    padding: 110px 25px 145px;
 }
 
 .signature-line {
@@ -230,7 +201,7 @@ nav {
 
 .signature-greeting {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 27px;
+    font-size: 28px;
     font-style: italic;
     margin-bottom: 35px;
 }
@@ -249,8 +220,6 @@ nav {
     margin-top: 20px;
 }
 
-/* FOOTER */
-
 footer {
     border-top: 1px solid #e8e5df;
     padding: 35px 20px;
@@ -260,14 +229,12 @@ footer {
     color: #999;
 }
 
-/* LIGHTBOX */
-
 .lightbox {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(12,12,12,0.97);
     z-index: 9999;
+    background: rgba(12,12,12,0.97);
     align-items: center;
     justify-content: center;
     padding: 55px 20px;
@@ -285,45 +252,34 @@ footer {
 
 .lightbox-close {
     position: absolute;
-    top: 22px;
-    right: 30px;
-    color: white;
-    font-size: 36px;
-    font-weight: 300;
-    cursor: pointer;
+    top: 20px;
+    right: 28px;
+    color: #fff;
+    font-size: 38px;
     background: transparent;
-    border: none;
-    z-index: 10000;
+    border: 0;
+    cursor: pointer;
 }
 
-/* ANIMATIONS — FIXED */
-
+/* Content is visible by default.
+   JavaScript is not required to reveal it. */
 .reveal {
-    opacity: 1;
-    transform: none;
-    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1 !important;
+    transform: none !important;
 }
 
-.reveal.visible {
-    opacity: 1;
-    transform: none;
-}
-
-/* MOBILE */
-
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
     nav {
-        padding: 25px 6%;
+        padding: 24px 6%;
     }
 
     .logo {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     .nav-right {
         font-size: 8px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
     }
 
     .hero {
@@ -331,18 +287,12 @@ footer {
         padding: 90px 20px;
     }
 
-    .hero h1 {
-        font-size: clamp(55px, 14vw, 90px);
-        letter-spacing: -2px;
-    }
-
     .story {
-        padding: 75px 27px;
+        padding: 75px 25px;
     }
 
     .story p {
         font-size: 24px;
-        line-height: 1.6;
     }
 
     .artwork {
@@ -356,18 +306,9 @@ footer {
     .artwork-info {
         margin-top: 32px;
     }
-
-    .artwork-details {
-        font-size: 10px;
-    }
-
-    .signature-section {
-        padding: 90px 20px 110px;
-    }
 }
 
-@media(prefers-reduced-motion: reduce) {
-
+@media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
     }
@@ -376,80 +317,49 @@ footer {
         transition: none;
     }
 }
-
 </style>
 </head>
 
 <body>
-
-<!-- NAVIGATION -->
 
 <nav>
     <div class="logo">UNSALABLE</div>
     <div class="nav-right">DR. THEOLOGOS THEOLOGOU</div>
 </nav>
 
-<!-- HERO -->
-
 <section class="hero">
-
-    <div class="hero-small">
-        THE ART OF THE HUMAN SOUL
-    </div>
-
+    <div class="hero-small">THE ART OF THE HUMAN SOUL</div>
     <h1>UNSALABLE</h1>
-
-    <div class="hero-subtitle">
-        I operate by day. I paint by night.
-    </div>
-
+    <div class="hero-subtitle">I operate by day. I paint by night.</div>
     <div class="hero-line"></div>
-
 </section>
 
 <!-- INTRODUCTION -->
 
-<section class="story reveal">
-
+<section class="story">
     <h2>Painting with a Scalpel</h2>
 
-    <p>
-        Can a doctor spend an entire lifetime
-        giving nothing but life?
-    </p>
+    <p>Can a doctor spend an entire lifetime giving nothing but life?</p>
 
-    <p>
-        And could such a rare gift be accompanied
-        by an even rarer talent:
-        the ability to paint portraits
-        with surgical precision?
-    </p>
+    <p>And could such a rare gift be accompanied by an even rarer talent: the ability to paint portraits with surgical precision?</p>
 
     <p class="emphasis">With a scalpel?</p>
 
-    <p>
-        Not merely to capture a face,
-        but to touch the very essence of the soul?
-    </p>
-
+    <p>Not merely to capture a face, but to touch the very essence of the soul?</p>
 </section>
 
-<!-- ARTWORK 1: MEDUSA -->
+<!-- ARTWORK 1 -->
 
-<section class="artwork reveal">
+<section class="artwork">
     <div class="artwork-inner">
-
-        <img
-            src="images/medusa.jpg"
-            alt="MEDUSA — Artwork by Theologos Theologou"
-            loading="lazy"
-            onclick="openLightbox(this)"
-        >
+        <img src="images/medusa.jpg"
+             alt="MEDUSA — Artwork by Theologos Theologou"
+             loading="lazy"
+             onclick="openLightbox(this)">
 
         <div class="artwork-info">
             <div class="artwork-number">01 / 07</div>
             <h2 class="artwork-title">MEDUSA</h2>
-
             <div class="artwork-details">
                 Hyperrealism<br>
                 Medium: Colored Pencils on Pastelmat<br>
@@ -457,23 +367,15 @@ footer {
                 Year: 2026
             </div>
         </div>
-
     </div>
 </section>
 
 <!-- STORY 2 -->
 
-<section class="story reveal">
+<section class="story">
+    <p class="emphasis">A neurosurgeon who operates with brushstrokes.</p>
 
-    <p class="emphasis">
-        A neurosurgeon who operates with brushstrokes.
-    </p>
-
-    <p>
-        A painter of the soul, revealing the quintessence
-        of human existence through thousands
-        of infinitesimal pencil strokes and scalpel cuts.
-    </p>
+    <p>A painter of the soul, revealing the quintessence of human existence through thousands of infinitesimal pencil strokes and scalpel cuts.</p>
 
     <div class="story-divider"></div>
 
@@ -481,33 +383,23 @@ footer {
 
     <p>And one day, he asks it:</p>
 
-    <p>— How many scalpel cuts make up the human soul?</p>
-
-    <p>
-        How can I connect the neurons
-        so that they become healing?
-    </p>
-
-    <p>How can I free you from the Human Being?</p>
-
+    <p>— How many scalpel cuts make up the human soul?<br>
+    How can I connect the neurons so that they become healing?<br>
+    How can I free you from the Human Being?</p>
 </section>
 
-<!-- ARTWORK 2: SAVIOR -->
+<!-- ARTWORK 2 -->
 
-<section class="artwork reveal">
+<section class="artwork">
     <div class="artwork-inner">
-
-        <img
-            src="images/IMG_9437.JPG"
-            alt="Savior — Artwork by Theologos Theologou"
-            loading="lazy"
-            onclick="openLightbox(this)"
-        >
+        <img src="images/IMG_9437.JPG"
+             alt="Savior — Artwork by Theologos Theologou"
+             loading="lazy"
+             onclick="openLightbox(this)">
 
         <div class="artwork-info">
             <div class="artwork-number">02 / 07</div>
             <h2 class="artwork-title">Savior</h2>
-
             <div class="artwork-details">
                 Hyperrealism<br>
                 Medium: Colored Pencils on Pastelmat<br>
@@ -515,24 +407,15 @@ footer {
                 Year: 2026
             </div>
         </div>
-
     </div>
 </section>
 
 <!-- STORY 3 -->
 
-<section class="story reveal">
-
+<section class="story">
     <p>And Pain replies:</p>
 
-    <p>
-        — Cut the Human Being away from me with precision.
-        Carve marks around his wounded aura.
-        That way, he will remember me,
-        and I will be set free.
-    </p>
-
-    <div class="story-divider"></div>
+    <p>— Cut the Human Being away from me with precision. Carve marks around his wounded aura. That way, he will remember me, and I will be set free.</p>
 
     <p>The microscope no longer shows him neurons.</p>
 
@@ -542,81 +425,43 @@ footer {
 
     <p>— That one! Take it away from me!</p>
 
-    <p>
-        The neurosurgeon wonders:
-        How can I separate the Soul from Pain?
-    </p>
+    <p>The neurosurgeon wonders: How can I separate the Soul from Pain?</p>
 
-    <p>
-        And so he takes the scalpel in one hand.
-        And the pencil in the other.
-    </p>
+    <p>And so he takes the scalpel in one hand. And the pencil in the other.</p>
 
-    <p class="emphasis">
-        Scalpel — Pencil.<br>
-        Pain — Soul.
-    </p>
+    <p class="emphasis">Scalpel — Pencil.<br>Pain — Soul.</p>
 
     <p>And he sets them against one another.</p>
 
-    <p>
-        To fight.<br>
-        And to win.<br>
-        Both of them.
-    </p>
+    <p>To fight.<br>And to win.<br>Both of them.</p>
 
-    <p>
-        Reconciled for the first time
-        on the same sheet of paper.
-    </p>
+    <p>Reconciled for the first time on the same sheet of paper.</p>
 
-    <p class="emphasis">
-        Inseparable.<br>
-        Indistinguishable.<br>
-        Invincible.
-    </p>
+    <p class="emphasis">Inseparable. Indistinguishable. Invincible.</p>
 
     <div class="story-divider"></div>
 
-    <p>
-        Eight thousand neurosurgical operations.
-        Eight thousand souls alive.
-    </p>
+    <p>Eight thousand neurosurgical operations. Eight thousand souls alive.</p>
 
-    <p>
-        Eight thousand times when the hand
-        had to be precise,
-        while the soul had to remain present.
-    </p>
+    <p>Eight thousand times when the hand had to be precise, while the soul had to remain present.</p>
 
-    <p>
-        Because when you give Pain a name and a form,
-        you can drive it out of the Human Being.
-    </p>
+    <p>Because when you give Pain a name and a form, you can drive it out of the Human Being.</p>
 
     <p class="emphasis">That is where painting begins.</p>
-
 </section>
 
-<!-- ARTWORK 3: THE WEEPING VIRGIN MARY -->
+<!-- ARTWORK 3 -->
 
-<section class="artwork reveal">
+<section class="artwork">
     <div class="artwork-inner">
-
-        <img
-            src="images/IMG_9444%202.jpg"
-            alt="The Weeping Virgin Mary — Artwork by Theologos Theologou"
-            loading="lazy"
-            onclick="openLightbox(this)"
-        >
+        <img src="images/IMG_9444%202.jpg"
+             alt="The Weeping Virgin Mary — Artwork by Theologos Theologou"
+             loading="lazy"
+             onclick="openLightbox(this)">
 
         <div class="artwork-info">
             <div class="artwork-number">03 / 07</div>
-
-            <h2 class="artwork-title">
-                The Weeping Virgin Mary
-            </h2>
-
+            <h2 class="artwork-title">The Weeping Virgin Mary</h2>
             <div class="artwork-details">
                 Hyperrealism<br>
                 Medium: Colored Pencils on Pastelmat<br>
@@ -624,53 +469,37 @@ footer {
                 Year: 2026
             </div>
         </div>
-
     </div>
 </section>
 
 <!-- STORY 4 -->
 
-<section class="story reveal">
-
+<section class="story">
     <p class="emphasis">And yet, there is a paradox.</p>
 
-    <p>
-        In the operating room,
-        the hand must remain absolutely steady.
-    </p>
+    <p>In the operating room, the hand must remain absolutely steady.</p>
 
     <p>In painting, it must dare to tremble.</p>
 
-    <p>
-        In the operating room,
-        the eye searches for anatomy.
-    </p>
+    <p>In the operating room, the eye searches for anatomy.</p>
 
-    <p>
-        In painting,
-        it searches for that which has no anatomy.
-    </p>
+    <p>In painting, it searches for that which has no anatomy.</p>
 
     <p class="emphasis">The soul.</p>
-
 </section>
 
-<!-- ARTWORK 4: ARTEMIS -->
+<!-- ARTWORK 4 -->
 
-<section class="artwork reveal">
+<section class="artwork">
     <div class="artwork-inner">
-
-        <img
-            src="images/IMG_9453.JPG"
-            alt="Artemis — Artwork by Theologos Theologou"
-            loading="lazy"
-            onclick="openLightbox(this)"
-        >
+        <img src="images/IMG_9453.JPG"
+             alt="Artemis — Artwork by Theologos Theologou"
+             loading="lazy"
+             onclick="openLightbox(this)">
 
         <div class="artwork-info">
             <div class="artwork-number">04 / 07</div>
             <h2 class="artwork-title">Artemis</h2>
-
             <div class="artwork-details">
                 Hyperrealism<br>
                 Medium: Colored Pencils on Pastelmat<br>
@@ -678,16 +507,82 @@ footer {
                 Year: 2026
             </div>
         </div>
-
     </div>
 </section>
 
 <!-- STORY 5 -->
 
-<section class="story reveal">
-
+<section class="story">
     <p>That is why, whenever I look at a face, I wonder:</p>
 
-    <p>
-        What has this person endured?<br>
-        What have they lost?<br>
+    <p>What has this person endured?<br>
+    What have they lost?<br>
+    What have they loved?<br>
+    What do they carry within them?<br>
+    What must they never forget?</p>
+
+    <p class="emphasis">The scalpel carves.<br>
+    The pencil remembers.<br>
+    The paper preserves the trace.</p>
+
+    <p>And the face begins to speak.</p>
+
+    <p>And then there is Him.</p>
+
+    <p>The hand reaching out toward the viewer.</p>
+
+    <p class="emphasis">Not to ask.<br>To offer.</p>
+</section>
+
+<!-- ARTWORK 5 -->
+
+<section class="artwork">
+    <div class="artwork-inner">
+        <img src="images/IMG_9454%202.jpg"
+             alt="Lucifer Falling — Artwork by Theologos Theologou"
+             loading="lazy"
+             onclick="openLightbox(this)">
+
+        <div class="artwork-info">
+            <div class="artwork-number">05 / 07</div>
+            <h2 class="artwork-title">Lucifer Falling</h2>
+            <div class="artwork-details">
+                Hyperrealism<br>
+                Medium: Colored Pencils on Pastelmat<br>
+                Dimensions: 60 × 90 cm<br>
+                Year: 2026
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STORY 6 -->
+
+<section class="story">
+    <p>For a moment, the viewer ceases to be merely a viewer.</p>
+
+    <p>They become the person toward whom the hand is reaching.</p>
+
+    <p>And then the work changes.</p>
+
+    <p>You are no longer looking at a portrait.</p>
+
+    <p class="emphasis">You feel that the portrait is looking back at you.</p>
+
+    <div class="story-divider"></div>
+
+    <p>This moment lies at the heart of my Tetralogy:</p>
+
+    <p class="emphasis">Birth. Pain. Healing. Hope.</p>
+
+    <p>Four paintings, one narrative.</p>
+
+    <p>Four moments in the human experience, as I encounter them in the operating room and on paper.</p>
+
+    <p>From darkness into light.<br>From injury to redemption.</p>
+
+    <p>The outstretched hand is the same hand in all four.</p>
+
+    <p>Sometimes it asks for help.<br>
+    Sometimes it gives.<br>
+    Sometimes it heals.<br
