@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -42,7 +41,6 @@ body {
 /* NAVIGATION */
 
 nav {
-    position: relative;
     width: 100%;
     padding: 32px 7%;
     display: flex;
@@ -87,7 +85,7 @@ nav {
 
 .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(75px, 13vw, 170px);
+    font-size: clamp(55px, 12vw, 170px);
     font-weight: 300;
     letter-spacing: -3px;
     line-height: 1;
@@ -140,10 +138,6 @@ nav {
 .story .emphasis {
     font-style: italic;
     font-size: clamp(27px, 3vw, 38px);
-}
-
-.story .small-text {
-    font-size: clamp(21px, 2.3vw, 27px);
 }
 
 .story-divider {
@@ -302,17 +296,17 @@ footer {
     z-index: 10000;
 }
 
-/* ANIMATIONS */
+/* ANIMATIONS — FIXED */
 
 .reveal {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: none;
     transition: opacity 1s ease, transform 1s ease;
 }
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 /* MOBILE */
@@ -378,36 +372,22 @@ footer {
         scroll-behavior: auto;
     }
 
-    .reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
-
     .artwork img {
         transition: none;
     }
 }
 
 </style>
-
 </head>
 
 <body>
 
-
 <!-- NAVIGATION -->
 
 <nav>
-
     <div class="logo">UNSALABLE</div>
-
-    <div class="nav-right">
-        DR. THEOLOGOS THEOLOGOU
-    </div>
-
+    <div class="nav-right">DR. THEOLOGOS THEOLOGOU</div>
 </nav>
-
 
 <!-- HERO -->
 
@@ -427,8 +407,6 @@ footer {
 
 </section>
 
-
-
 <!-- INTRODUCTION -->
 
 <section class="story reveal">
@@ -447,9 +425,7 @@ footer {
         with surgical precision?
     </p>
 
-    <p class="emphasis">
-        With a scalpel?
-    </p>
+    <p class="emphasis">With a scalpel?</p>
 
     <p>
         Not merely to capture a face,
@@ -458,12 +434,9 @@ footer {
 
 </section>
 
-
-
 <!-- ARTWORK 1: MEDUSA -->
 
 <section class="artwork reveal">
-
     <div class="artwork-inner">
 
         <img
@@ -474,9 +447,7 @@ footer {
         >
 
         <div class="artwork-info">
-
             <div class="artwork-number">01 / 07</div>
-
             <h2 class="artwork-title">MEDUSA</h2>
 
             <div class="artwork-details">
@@ -485,14 +456,10 @@ footer {
                 Dimensions: 60 × 90 cm<br>
                 Year: 2026
             </div>
-
         </div>
 
     </div>
-
 </section>
-
-
 
 <!-- STORY 2 -->
 
@@ -510,35 +477,24 @@ footer {
 
     <div class="story-divider"></div>
 
-    <p>
-        Every day, the doctor observes Pain.
-    </p>
+    <p>Every day, the doctor observes Pain.</p>
 
-    <p>
-        And one day, he asks it:
-    </p>
+    <p>And one day, he asks it:</p>
 
-    <p>
-        — How many scalpel cuts make up the human soul?
-    </p>
+    <p>— How many scalpel cuts make up the human soul?</p>
 
     <p>
         How can I connect the neurons
         so that they become healing?
     </p>
 
-    <p>
-        How can I free you from the Human Being?
-    </p>
+    <p>How can I free you from the Human Being?</p>
 
 </section>
-
-
 
 <!-- ARTWORK 2: SAVIOR -->
 
 <section class="artwork reveal">
-
     <div class="artwork-inner">
 
         <img
@@ -549,9 +505,7 @@ footer {
         >
 
         <div class="artwork-info">
-
             <div class="artwork-number">02 / 07</div>
-
             <h2 class="artwork-title">Savior</h2>
 
             <div class="artwork-details">
@@ -560,22 +514,16 @@ footer {
                 Dimensions: 60 × 90 cm<br>
                 Year: 2026
             </div>
-
         </div>
 
     </div>
-
 </section>
-
-
 
 <!-- STORY 3 -->
 
 <section class="story reveal">
 
-    <p>
-        And Pain replies:
-    </p>
+    <p>And Pain replies:</p>
 
     <p>
         — Cut the Human Being away from me with precision.
@@ -586,21 +534,13 @@ footer {
 
     <div class="story-divider"></div>
 
-    <p>
-        The microscope no longer shows him neurons.
-    </p>
+    <p>The microscope no longer shows him neurons.</p>
 
-    <p class="emphasis">
-        It shows him one single Soul.
-    </p>
+    <p class="emphasis">It shows him one single Soul.</p>
 
-    <p>
-        And Pain screams:
-    </p>
+    <p>And Pain screams:</p>
 
-    <p>
-        — That one! Take it away from me!
-    </p>
+    <p>— That one! Take it away from me!</p>
 
     <p>
         The neurosurgeon wonders:
@@ -617,9 +557,7 @@ footer {
         Pain — Soul.
     </p>
 
-    <p>
-        And he sets them against one another.
-    </p>
+    <p>And he sets them against one another.</p>
 
     <p>
         To fight.<br>
@@ -656,18 +594,13 @@ footer {
         you can drive it out of the Human Being.
     </p>
 
-    <p class="emphasis">
-        That is where painting begins.
-    </p>
+    <p class="emphasis">That is where painting begins.</p>
 
 </section>
-
-
 
 <!-- ARTWORK 3: THE WEEPING VIRGIN MARY -->
 
 <section class="artwork reveal">
-
     <div class="artwork-inner">
 
         <img
@@ -678,7 +611,6 @@ footer {
         >
 
         <div class="artwork-info">
-
             <div class="artwork-number">03 / 07</div>
 
             <h2 class="artwork-title">
@@ -691,32 +623,23 @@ footer {
                 Dimensions: 60 × 90 cm<br>
                 Year: 2026
             </div>
-
         </div>
 
     </div>
-
 </section>
-
-
 
 <!-- STORY 4 -->
 
 <section class="story reveal">
 
-    <p class="emphasis">
-        And yet, there is a paradox.
-    </p>
+    <p class="emphasis">And yet, there is a paradox.</p>
 
     <p>
         In the operating room,
         the hand must remain absolutely steady.
     </p>
 
-    <p>
-        In painting,
-        it must dare to tremble.
-    </p>
+    <p>In painting, it must dare to tremble.</p>
 
     <p>
         In the operating room,
@@ -728,18 +651,13 @@ footer {
         it searches for that which has no anatomy.
     </p>
 
-    <p class="emphasis">
-        The soul.
-    </p>
+    <p class="emphasis">The soul.</p>
 
 </section>
-
-
 
 <!-- ARTWORK 4: ARTEMIS -->
 
 <section class="artwork reveal">
-
     <div class="artwork-inner">
 
         <img
@@ -750,11 +668,26 @@ footer {
         >
 
         <div class="artwork-info">
-
             <div class="artwork-number">04 / 07</div>
-
             <h2 class="artwork-title">Artemis</h2>
 
             <div class="artwork-details">
                 Hyperrealism<br>
-                Medium: Colored P
+                Medium: Colored Pencils on Pastelmat<br>
+                Dimensions: 60 × 90 cm<br>
+                Year: 2026
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- STORY 5 -->
+
+<section class="story reveal">
+
+    <p>That is why, whenever I look at a face, I wonder:</p>
+
+    <p>
+        What has this person endured?<br>
+        What have they lost?<br>
